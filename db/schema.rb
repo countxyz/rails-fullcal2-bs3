@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140512122936) do
     t.datetime "start"
     t.datetime "finish"
     t.text     "description"
+    t.boolean  "all_day",     default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -5,6 +5,8 @@ class CreateEvents < ActiveRecord::Migration
       t.datetime :start
       t.datetime :finish
       t.text     :description
+      t.boolean  :all_day, default: false
+
       t.timestamps
     end
     add_index :events, :name, using: :btree
