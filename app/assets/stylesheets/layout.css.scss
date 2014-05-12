@@ -1,0 +1,33 @@
+#header {
+  height: 80px;
+  min-width: 100%;
+  background-color: #00AEEF; }
+
+.content { padding-top: 50px; }
+
+.modal-dialog {
+  width: 400px;
+  color: black;
+}
+
+.bootstrap-datetimepicker-widget {
+  background-color: #00AEEF;
+  color: black;
+}
+
+.picker-switch {
+  background-color: black;
+
+  .btn:hover {
+    background-color: black;
+  }
+}
+
+.day.active.today {
+  background-color: white;
+  color: black;
+}
+
+#create-event {
+  padding-top: 15px
+}

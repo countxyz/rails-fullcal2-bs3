@@ -2,6 +2,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.ui.all
+//= require modernizr-latest
 //= require bootstrap
 //= require fullcalendar
 //= require gcal
