@@ -5,7 +5,7 @@ $(document).on('page:change', function() {
       center: 'title',
       right: 'month,agendaWeek,agendaDay'
     },
-    height: 800,
+    height: 600,
     editable: true,
     events: '/events',
     eventRender: function(event, element) {

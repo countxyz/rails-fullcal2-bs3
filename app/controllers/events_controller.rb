@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: [:edit, :update]
+  before_action :set_event, only: [:edit, :update, :delete, :destroy]
   respond_to :html, :js, :json
 
   def index
@@ -20,6 +20,10 @@ class EventsController < ApplicationController
 
   def update
     @event.update_attributes(event_params)
+  end
+
+  def destroy 
+    @event.destroy
   end
 
   private
