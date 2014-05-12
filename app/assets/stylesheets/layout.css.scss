@@ -1,28 +1,55 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body { margin-bottom: 60px; }
+
 #header {
   height: 80px;
   min-width: 100%;
   background-color: #00AEEF;
 
   #create-event {
-    padding-top: 15px; } }
+    padding-top: 15px; 
+  }
+}
 
 .content { padding-top: 50px; }
 
 .modal-dialog {
   width: 400px;
-  color: black; }
+  color: black;
+}
 
 .bootstrap-datetimepicker-widget {
   background-color: #00AEEF;
-  color: black; }
+  color: black;
+}
 
 .day { border: black 1px solid; }
 
 .day.active.today {
   background-color: white;
-  color: black; }
+  color: black;
+}
 
 .picker-switch {
   background-color: black;
 
-  .btn:hover { background-color: black; } }
+  .btn:hover {
+    background-color: black;
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  border-top: white 1px solid;
+
+  p {
+    padding-top: 10px;
+  }
+}
