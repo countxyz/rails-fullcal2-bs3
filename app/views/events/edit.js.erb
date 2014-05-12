@@ -1,0 +1,7 @@
+var $divs = $('<div></div>');
+
+BootstrapDialog.show({
+  title: 'Edit Event',
+  message: $divs.append("<%= escape_javascript(render 'edit') %>"),
+  draggable: true
+});

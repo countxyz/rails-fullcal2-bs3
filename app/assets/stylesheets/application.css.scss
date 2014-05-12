@@ -14,5 +14,7 @@ $btn-default-color: white;
 $btn-default-bg: black;
 $link-hover-color: white;
 
+.day.active { background-color: black !important }
+
 @import 'bootstrap';
 @import 'bootstrap-datetimepicker';
