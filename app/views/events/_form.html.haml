@@ -3,6 +3,7 @@
   = f.input :description, as: :text, input_html: { rows: 4, cols: 30 }
   = f.input :start,  as: :datetimepicker
   = f.input :finish, as: :datetimepicker
+  = f.input :all_day, as: :boolean, label: 'All Day'
   .modal-footer
     = f.button :submit
 

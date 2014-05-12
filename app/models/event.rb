@@ -5,10 +5,6 @@ class Event < ActiveRecord::Base
 
   validates :description, presence: true, length: { in: 2..1000 }
 
-  validates :start, presence: true
-
-  validates :finish, presence: true
-
   private
 
     def finish_cannot_be_earlier_than_start
