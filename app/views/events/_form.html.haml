@@ -1,0 +1,11 @@
+= simple_form_for @event, remote: true do |f|
+  = f.input :name
+  = f.input :description, as: :text, input_html: { rows: 4, cols: 30 }
+  = f.input :start,  as: :datetimepicker
+  = f.input :finish, as: :datetimepicker
+  .modal-footer
+    = f.button :submit
+
+:coffeescript
+  $ ->
+    $('.datetimepicker10').datetimepicker()

@@ -1,0 +1,7 @@
+var $divs = $('<div></div>');
+
+BootstrapDialog.show({
+  title: 'Create Event',
+  message: $divs.append("<%= escape_javascript(render 'form') %>"),
+  draggable: true,
+});

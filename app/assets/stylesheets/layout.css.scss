@@ -1,7 +1,12 @@
 #header {
   height: 80px;
   min-width: 100%;
-  background-color: #00AEEF; }
+  background-color: #00AEEF;
+
+  #create-event {
+    padding-top: 15px;
+  }
+}
 
 .content { padding-top: 50px; }
 
@@ -15,19 +20,15 @@
   color: black;
 }
 
+.day.active.today {
+  background-color: white;
+  color: black;
+}
+
 .picker-switch {
   background-color: black;
 
   .btn:hover {
     background-color: black;
   }
-}
-
-.day.active.today {
-  background-color: white;
-  color: black;
-}
-
-#create-event {
-  padding-top: 15px
 }

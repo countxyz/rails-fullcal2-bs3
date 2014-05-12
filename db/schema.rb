@@ -17,12 +17,14 @@ ActiveRecord::Schema.define(version: 20140512122936) do
   enable_extension "plpgsql"
 
   create_table "events", force: true do |t|
-    t.string   "title"
+    t.string   "name"
     t.datetime "start"
     t.datetime "finish"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "events", ["name"], name: "index_events_on_name", using: :btree
 
 end
