@@ -14,10 +14,6 @@ class EventsController < ApplicationController
     @event = Event.create(event_params)
   end
 
-  def create
-    @event = Event.create(event_params)
-  end
-
   def update
     @event.update_attributes(event_params)
   end

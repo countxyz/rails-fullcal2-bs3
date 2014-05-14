@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'events#index'
 
-  resources :events do
-    get 'delete'
+  resources :events, except: :show do
+    get :delete
   end
 end
