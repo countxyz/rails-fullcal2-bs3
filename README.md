@@ -10,7 +10,6 @@ A rails demo for Adam Shaw's fabulous jQuery Plugin FullCalendar. View Demo at
 * [FullCalendar 2.0.0-beta2](http://arshaw.com/fullcalendar)
 * [Bootstrap 3](http://getbootstrap.com)
 * [Bootstrap Datetimepicker v3](http://eonasdan.github.io/bootstrap-datetimepicker)
-* [Bootstrap3-dialog](http://nakupanda.github.io/bootstrap3-dialog)
 
 ## License
 

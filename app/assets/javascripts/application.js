@@ -8,5 +8,4 @@
 //= require fullcalendar
 //= require gcal
 //= require bootstrap-datetimepicker
-//= require bootstrap-dialog.min
 //= require events
