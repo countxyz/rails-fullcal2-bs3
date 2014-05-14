@@ -10,6 +10,14 @@ describe Event do
     it 'is invalid when description is not provided' do
       expect(build(:event, description: nil)).to_not be_valid
     end
+
+    it 'is invalid when start is not provided' do
+      expect(build(:event, start: nil)).to_not be_valid
+    end
+
+    it 'is invalid when finish is not provided' do
+      expect(build(:event, finish: nil)).to_not be_valid
+    end
   end
 
   describe 'field lengths' do
