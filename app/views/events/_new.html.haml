@@ -6,7 +6,8 @@
     .modal-body
       = render 'form'
 
-:javascript
-  $(function(){
-    $('.draggable').draggable({ scroll: true, cursor: "crosshair"});
-  });
+:coffeescript
+  $ ->
+    $('.draggable').draggable
+      scroll: true
+      cursor: 'crosshair'
