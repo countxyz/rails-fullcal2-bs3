@@ -12,12 +12,10 @@ class Event < ActiveRecord::Base
   private
 
     def finish_cannot_be_earlier_than_start
-      unless start.nil? || finish.nil?
-        time_error if finish < start
-      end
+      time_error if finish < start
     end
 
     def time_error
-      errors.add(:time_error, "can't be before start")
+      errors.add(:time_error, 'The fundamental laws of nature prevent time travel')
     end
 end

@@ -11,4 +11,4 @@ def secure_token
   end
 end
 
-RailsFullcalBs3::Application.config.secret_key_base = secure_token
+RailsFullcal2Bs3::Application.config.secret_key_base = secure_token

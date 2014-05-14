@@ -9,7 +9,7 @@ require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
 
-module RailsFullcalBs3
+module RailsFullcal2Bs3
   class Application < Rails::Application
   end
 end

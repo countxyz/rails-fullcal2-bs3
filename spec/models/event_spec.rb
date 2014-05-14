@@ -10,14 +10,6 @@ describe Event do
     it 'is invalid when description is not provided' do
       expect(build(:event, description: nil)).to_not be_valid
     end
-
-    it 'is invalid when start is not provided' do
-      expect(build(:event, start: nil)).to_not be_valid
-    end
-
-    it 'is invalid when finish is not provided' do
-      expect(build(:event, finish: nil)).to_not be_valid
-    end
   end
 
   describe 'field lengths' do
@@ -40,8 +32,8 @@ describe Event do
 
   describe 'invalid dates' do
     it 'cannot have a finish before start' do
-      event = build(:event, start: '2014-01-24 01:00:00', 
-                            finish: '2014-01-23 01:00:00')
+      event = build(:event, start: '2014-05-05 01:00:00', 
+                            finish: '2014-05-04 01:00:00')
       expect(event).to_not be_valid
     end
   end

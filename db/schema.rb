@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20140512122936) do
 
   create_table "events", force: true do |t|
     t.string   "name"
-    t.datetime "start"
-    t.datetime "finish"
+    t.datetime "start",       default: '2014-05-14 00:00:00'
+    t.datetime "finish",      default: '2014-05-14 23:59:59'
     t.text     "description"
     t.boolean  "all_day",     default: false
     t.datetime "created_at"

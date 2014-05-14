@@ -21,6 +21,7 @@ $(document).on('page:change', function() {
     height: 600,
     editable: true,
     resizable: true,
+    timezone: true,
     events: '/events',
     eventRender: function(event, element) {
       $('a').attr('data-remote', true);
