@@ -1,13 +1,13 @@
-# Rails FullCalendar w/ Bootstrap 3 Demo
+# Rails FullCalendar2 w/ Bootstrap 3 Demo
 
 ## About
 
 A rails demo for Adam Shaw's fabulous jQuery Plugin FullCalendar. View Demo at
-[Rails FullCalendar 3](http://rails-fullcal-bs3.herokuapp.com)
+[Rails FullCalendar 3](http://rails-fullcal2-bs3.herokuapp.com/)
 
 ## Features
 
-* [FullCalendar 1.6.4](http://arshaw.com/fullcalendar)
+* [FullCalendar 2.0.0-beta2](http://arshaw.com/fullcalendar)
 * [Bootstrap 3](http://getbootstrap.com)
 * [Bootstrap Datetimepicker v3](http://eonasdan.github.io/bootstrap-datetimepicker)
 * [Bootstrap3-dialog](http://nakupanda.github.io/bootstrap3-dialog)
