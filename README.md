@@ -3,7 +3,7 @@
 ## About
 
 A rails demo for Adam Shaw's fabulous jQuery Plugin FullCalendar. View Demo at
-[Rails FullCalendar 3](http://rails-fullcal2-bs3.herokuapp.com/)
+[Rails FullCalendar2 BS3](http://rails-fullcal2-bs3.herokuapp.com/)
 
 ## Features
 

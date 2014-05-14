@@ -12,7 +12,9 @@ class Event < ActiveRecord::Base
   private
 
     def finish_cannot_be_earlier_than_start
-      time_error if finish < start
+      unless start.nil? || finish.nil?
+        time_error if finish < start
+      end
     end
 
     def time_error

@@ -2,8 +2,8 @@ class CreateEvents < ActiveRecord::Migration
   def change
     create_table :events do |t|
       t.string   :name
-      t.datetime :start,  default: Time.zone.now.beginning_of_day
-      t.datetime :finish, default: Time.zone.now.end_of_day
+      t.datetime :start
+      t.datetime :finish
       t.text     :description
       t.boolean  :all_day, default: false
 

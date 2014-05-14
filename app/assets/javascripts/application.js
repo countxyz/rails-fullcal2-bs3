@@ -1,12 +1,12 @@
+//= require modernizr-latest
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.ui.all
-//= require modernizr-latest
 //= require bootstrap
+//= require moment
 //= require fullcalendar
 //= require gcal
-//= require moment
 //= require bootstrap-datetimepicker
 //= require bootstrap-dialog.min
 //= require events

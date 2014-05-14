@@ -32,4 +32,9 @@ group :development, :test do
   gem 'jazz_hands', '~> 0.5.2'
 end
 
+group :test do
+  gem 'selenium-webdriver', '~> 2.41.0'
+  gem 'capybara', '~> 2.2.1'
+end
+
 gem 'rails_12factor', '~> 0.0.2', group: :production

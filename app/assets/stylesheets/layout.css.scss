@@ -17,31 +17,6 @@ body { margin-bottom: 60px; }
 
 .content { padding-top: 50px; }
 
-.modal-dialog {
-  width: 400px;
-  color: black;
-}
-
-.bootstrap-datetimepicker-widget {
-  background-color: #00AEEF;
-  color: black;
-}
-
-.day { border: black 1px solid; }
-
-.day.active.today {
-  background-color: white;
-  color: black;
-}
-
-.picker-switch {
-  background-color: black;
-
-  .btn:hover {
-    background-color: black;
-  }
-}
-
 #footer {
   position: absolute;
   bottom: 0;

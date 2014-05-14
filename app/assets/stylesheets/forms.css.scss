@@ -1,0 +1,56 @@
+.modal-dialog {
+  width: 400px;
+}
+
+.modal-header {
+  background-color: black;
+  color: white;
+
+  button#x-close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: -2px;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    border: 0;
+    background-color: black;
+
+    &:hover,
+    &:focus {
+      color: #00AEEF;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+.modal-body {
+  color: black;
+}
+
+.bootstrap-datetimepicker-widget {
+  background-color: #00AEEF;
+  color: black;
+}
+
+.day { border: black 1px solid; }
+
+.day.active.today {
+  background-color: white;
+  color: black;
+}
+
+.picker-switch {
+  background-color: black;
+
+  .btn:hover {
+    background-color: black;
+  }
+}

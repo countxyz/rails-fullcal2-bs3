@@ -1,0 +1,12 @@
+.modal-dialog.draggable
+  .modal-content
+    .modal-header
+      %button#x-close(type="button" data-dismiss="modal" aria-hidden="true") x
+      %h2.modal-title Events
+    .modal-body
+      = render 'form'
+
+:javascript
+  $(function(){
+    $('.draggable').draggable({ scroll: true, cursor: "crosshair"});
+  });
