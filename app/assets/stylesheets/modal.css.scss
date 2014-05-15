@@ -1,5 +1,8 @@
-.modal-dialog {
-  width: 400px;
+.modal-dialog { width: 400px; }
+
+.errors li {
+  font-weight: 700;
+  color: red;
 }
 
 .modal-header {
@@ -31,26 +34,17 @@
   }
 }
 
-.modal-body {
-  color: black;
-}
+.modal-body { color: black; }
 
-.bootstrap-datetimepicker-widget {
-  background-color: #00AEEF;
-  color: black;
-}
+.modal-footer {
+  display: inline-block;
+  min-width: 100%;
 
-.day { border: black 1px solid; }
+  #hidden-delete {
+    float: left;
+  }
 
-.day.active.today {
-  background-color: white;
-  color: black;
-}
-
-.picker-switch {
-  background-color: black;
-
-  .btn:hover {
-    background-color: black;
+  .submit-right {
+    float: right;
   }
 }
