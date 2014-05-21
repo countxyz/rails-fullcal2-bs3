@@ -5,7 +5,7 @@ function resize(event, dayDelta, minuteDelta){
     url: event.update,
     contentType: 'application/json',
     data: JSON.stringify({
-      event: { id: event.id, finish: event.end + minuteDelta + dayDelta },
+      event: { id: event.id, finish: event.end },
       _method:'put'
     })
   });
@@ -21,7 +21,6 @@ $(document).on('page:change', function() {
     height: 600,
     editable: true,
     resizable: true,
-    timezone: true,
     events: '/events',
     eventRender: function(event, element) {
       $('a').attr('data-remote', true);
