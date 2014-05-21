@@ -11,6 +11,19 @@ function resize(event, dayDelta, minuteDelta){
   });
 }
 
+function drop(event, dayDelta, minuteDelta){
+  $.ajax({
+    type: 'PUT',
+    dataType: 'script',
+    url: event.update,
+    contentType: 'application/json',
+    data: JSON.stringify({
+      event: { id: event.id, start: event.start, finish: event.end },
+      _method:'put'
+    })
+  });
+}
+
 $(document).on('page:change', function() {
   $('#calendar').fullCalendar({
     header: {
@@ -25,8 +38,11 @@ $(document).on('page:change', function() {
     eventRender: function(event, element) {
       $('a').attr('data-remote', true);
     },
-    eventResize: function(event, dayDelta, minuteDelta, revertFunc) {
+    eventResize: function(event, dayDelta, minuteDelta) {
       resize(event, dayDelta, minuteDelta);
+    },
+    eventDrop: function(event, dayDelta, minuteDelta, allDay){
+      drop(event, dayDelta, minuteDelta);
     }
   });
 });
