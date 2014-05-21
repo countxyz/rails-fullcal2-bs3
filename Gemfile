@@ -38,4 +38,5 @@ group :test do
   gem 'capybara', '~> 2.1.0'
   gem 'capybara-webkit', '~> 1.1.1'
   gem 'shoulda-matchers', '~> 2.6.1'
+  gem 'formulaic', '~> 0.0.6'
 end

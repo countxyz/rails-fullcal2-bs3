@@ -78,6 +78,10 @@ GEM
       railties (>= 3.0.0)
     font-awesome-sass (4.0.3.1)
       sass (~> 3.2)
+    formulaic (0.0.6)
+      activesupport
+      capybara
+      i18n
     grit (2.5.0)
       diff-lcs (~> 1.1)
       mime-types (~> 1.15)
@@ -244,6 +248,7 @@ DEPENDENCIES
   database_cleaner (~> 1.2.0)
   factory_girl_rails (~> 4.4.1)
   font-awesome-sass (~> 4.0.3.1)
+  formulaic (~> 0.0.6)
   haml-rails (~> 0.5.3)
   jazz_hands (~> 0.5.2)
   jquery-rails (~> 3.1.0)
