@@ -19,6 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'simple_form', '~> 3.1.0.rc1'
 gem 'font-awesome-sass', '~> 4.0.3.1'
 
+gem 'rails_12factor', '~> 0.0.2', group: :production
+
 group :development do
   gem 'better_errors', '~> 1.1.0'
   gem 'binding_of_caller', '~> 0.7.2'
@@ -33,8 +35,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'selenium-webdriver', '~> 2.41.0'
-  gem 'capybara', '~> 2.2.1'
+  gem 'capybara', '~> 2.1.0'
+  gem 'capybara-webkit', '~> 1.1.1'
+  gem 'shoulda-matchers', '~> 2.6.1'
 end
-
-gem 'rails_12factor', '~> 0.0.2', group: :production

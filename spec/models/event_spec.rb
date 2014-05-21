@@ -2,40 +2,16 @@ require 'spec_helper'
 
 describe Event do
 
-  describe 'empty fields' do
-    it 'is invalid when name is not provided' do
-      expect(build(:event, name: nil)).to_not be_valid
-    end
-
-    it 'is invalid when description is not provided' do
-      expect(build(:event, description: nil)).to_not be_valid
-    end
-    
-    it 'is invalid when start is not provided' do
-      expect(build(:event, start: nil)).to_not be_valid
-    end
-
-    it 'is invalid when finish is not provided' do
-      expect(build(:event, finish: nil)).to_not be_valid
-    end
+  describe 'presence' do
+    it { should validate_presence_of(:name) }
+    it { should validate_presence_of(:description) }
+    it { should validate_presence_of(:start) }
+    it { should validate_presence_of(:finish) }
   end
 
   describe 'field lengths' do
-    it 'is invalid when name has fewer than 2 characters' do
-      expect(build(:event, name: 'a')).to_not be_valid
-    end
-
-    it 'is invalid when name has more than 100 characters' do
-      expect(build(:event, name: 'a' * 101)).to_not be_valid
-    end
-
-    it 'is invalid when description has fewer than 2 characters' do
-      expect(build(:event, description: 'a')).to_not be_valid
-    end
-
-    it 'is invalid when description has more than 1000 characters' do
-      expect(build(:event, description: 'a' * 1001)).to_not be_valid
-    end
+    it { should ensure_length_of(:name).is_at_least(2).is_at_most(100) }
+    it { should ensure_length_of(:description).is_at_least(2).is_at_most(1000) }
   end
 
   describe 'invalid dates' do
