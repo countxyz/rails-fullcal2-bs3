@@ -36,7 +36,7 @@ $(document).on('page:change', function() {
     resizable: true,
     events: '/events',
     eventRender: function(event, element) {
-      $('a').attr('data-remote', true);
+      $('a.fc-event').attr('data-remote', true);
     },
     eventResize: function(event, dayDelta, minuteDelta) {
       resize(event, dayDelta, minuteDelta);
