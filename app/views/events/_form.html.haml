@@ -10,7 +10,7 @@
       = link_to @event, remote: true, method: :delete,
         data: { confirm: 'Are you sure?' }, id: 'destroy' do
         %button.btn.btn-sm.btn-danger
-          %i.fa.fa-exclamation
+          = icon('exclamation')
           Delete
     %span.submit-right= f.button :submit, 'Submit'
 
@@ -19,3 +19,8 @@
     $('.datetimepicker10').datetimepicker
       useCurrent: false
       useSeconds: false
+      icons:
+        time: 'fa fa-clock-o'
+        date: 'fa fa-calendar'
+        up:   'fa fa-arrow-up'
+        down: 'fa fa-arrow-down'    
