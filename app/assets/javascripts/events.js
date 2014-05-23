@@ -34,9 +34,12 @@ $(document).on('page:change', function() {
     height: 600,
     editable: true,
     resizable: true,
-    events: '/events',
+    eventSources: [
+      '/events',
+      'http://www.google.com/calendar/feeds/06301rf5gpts71p4aqc5lcgt24%40group.calendar.google.com/public/basic'
+      ],
     eventRender: function(event, element) {
-      $('a.fc-event').attr('data-remote', true);
+      $('a.fc-event-draggable').attr('data-remote', true);
     },
     eventResize: function(event, dayDelta, minuteDelta) {
       resize(event, dayDelta, minuteDelta);
