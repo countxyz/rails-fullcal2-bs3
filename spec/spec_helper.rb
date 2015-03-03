@@ -14,5 +14,4 @@ RSpec.configure do |config|
   config.order = 'random'
   config.include FactoryGirl::Syntax::Methods
   config.include Formulaic::Dsl
-  Capybara.javascript_driver = :webkit
 end
