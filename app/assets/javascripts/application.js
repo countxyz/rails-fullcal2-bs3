@@ -1,4 +1,3 @@
-//= require modernizr-latest
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
@@ -6,6 +5,5 @@
 //= require bootstrap
 //= require moment
 //= require fullcalendar
-//= require gcal
 //= require bootstrap-datetimepicker
 //= require events
